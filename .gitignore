@@ -36,3 +36,4 @@ Thumbs.db
 /src/main/webapp/WEB-INF/classes/conf/spring-dubbo.xml
 /src/main/webapp/WEB-INF/classes/conf/spring-mvc.xml
 /src/main/webapp/WEB-INF/classes/conf/spring-shiro.xml
+/src/main/webapp/WEB-INF/classes
