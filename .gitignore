@@ -1,0 +1,38 @@
+# maven ignore
+target/
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+/src/main/webapp/WEB-INF/classes/com/core/exception/*.class
+*.class
+/src/main/webapp/WEB-INF/classes/conf/appContext-include.xml
+/src/main/webapp/WEB-INF/classes/conf/appContext-ioc.xml
+/src/main/webapp/WEB-INF/classes/conf/cfg.properties
+/src/main/webapp/WEB-INF/classes/conf/spring-dubbo.xml
+/src/main/webapp/WEB-INF/classes/conf/spring-mvc.xml
+/src/main/webapp/WEB-INF/classes/conf/spring-shiro.xml
