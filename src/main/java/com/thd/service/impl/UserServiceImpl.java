@@ -75,7 +75,6 @@ public class UserServiceImpl implements UserService {
 		}
 		
 		User user = new User();
-		user.setMemo("测试测试测试=========");
 		UserCriteria ex2 = new UserCriteria();
 		ex2.createCriteria().andUserIdEqualTo(123);
 		userMapper.updateByCriteriaWithBLOBs(user, ex2);
