@@ -88,6 +88,7 @@ public class UserServiceImpl implements UserService {
 		System.out.println("key================"+key);;
 		System.out.println("gson.toJson(uu)================"+gson.toJson(uu));;
 		jedisCluster.set(key, gson.toJson(uu));
+		
 //		redisClientTemplate.set(key, gson.toJson(uu));
 //		User expected = gson.fromJson(redisClientTemplate.get(key),User.class);
 //		System.out.println("expected============================="+expected.getUserName());
