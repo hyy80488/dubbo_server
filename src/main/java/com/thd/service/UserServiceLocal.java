@@ -2,7 +2,7 @@ package com.thd.service;
 
 import com.thd.bean.User;
 
-public interface UserService {
+public interface UserServiceLocal {
 	/**
 	 * 根据ID查询用户
 	 * @param userId 用户id

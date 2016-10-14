@@ -15,12 +15,12 @@ import com.google.gson.Gson;
 import com.thd.bean.User;
 import com.thd.bean.UserCriteria;
 import com.thd.dao.UserMapper;
-import com.thd.service.UserService;
+import com.thd.service.UserServiceLocal;
 
 import redis.clients.jedis.JedisCluster;
 
 @Service("userService")
-public class UserServiceImpl implements UserService {
+public class UserServiceLocalImpl implements UserServiceLocal {
 	private UserMapper userMapper;
 	
 //	@Autowired
@@ -71,10 +71,11 @@ public class UserServiceImpl implements UserService {
 		List<User> list2 = userMapper.selectByCriteriaWithBLOBs(ex);
 		resultMap.put("resultList", list2);
 		for (User u : list2){
-			System.out.println("============================="+u.getUserName());
+			System.out.println("UserName============================="+u.getUserName());
 		}
 		
 		User user = new User();
+		user.setMemo("测试=测试=测试=============");
 		UserCriteria ex2 = new UserCriteria();
 		ex2.createCriteria().andUserIdEqualTo(123);
 		userMapper.updateByCriteriaWithBLOBs(user, ex2);
